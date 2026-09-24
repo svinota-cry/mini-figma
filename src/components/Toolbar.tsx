@@ -27,7 +27,7 @@ interface ToolbarProps {
 
 export default function Toolbar({ activeTool, onSelectTool }: ToolbarProps) {
   return (
-    <div className="flex w-12 flex-col items-center gap-1 border-r border-gray-200 bg-white py-3">
+    <div className="flex w-12 flex-col items-center gap-1 border-r border-gray-800 bg-gray-900 py-3">
       {TOOLS.map((tool) => {
         const isActive = tool.id === activeTool;
         return (
@@ -39,7 +39,7 @@ export default function Toolbar({ activeTool, onSelectTool }: ToolbarProps) {
             className={`flex h-9 w-9 items-center justify-center rounded-md transition-colors ${
               isActive
                 ? "bg-blue-600 text-white"
-                : "text-gray-500 hover:bg-gray-100 hover:text-gray-900"
+                : "text-gray-400 hover:bg-gray-800 hover:text-white"
             }`}
           >
             {TOOL_ICONS[tool.id]}

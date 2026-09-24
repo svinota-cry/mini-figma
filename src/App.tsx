@@ -48,7 +48,7 @@ export default function App() {
   });
 
   return (
-    <div className="flex h-screen w-screen overflow-hidden bg-white text-gray-900">
+    <div className="flex h-screen w-screen overflow-hidden bg-gray-900 text-white">
       <Toolbar activeTool={activeTool} onSelectTool={setActiveTool} />
       <main className="relative min-w-0 flex-1">
         <Canvas
@@ -70,7 +70,7 @@ export default function App() {
           onEndDrag={endDrag}
         />
       </main>
-      <aside className="flex w-60 shrink-0 flex-col border-l border-gray-200 bg-white">
+      <aside className="flex w-60 shrink-0 flex-col border-l border-gray-800 bg-gray-900">
         <PropertiesPanel
           selectedShape={selectedShape}
           onChangeFill={(fill) => {

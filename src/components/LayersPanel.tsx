@@ -16,11 +16,11 @@ export default function LayersPanel({
 
   return (
     <div className="flex min-h-0 flex-1 flex-col p-4">
-      <h2 className="text-xs font-semibold tracking-wide text-gray-400 uppercase">
+      <h2 className="text-xs font-semibold tracking-wide text-gray-500 uppercase">
         Layers
       </h2>
       {shapes.length === 0 ? (
-        <p className="mt-3 text-[11px] text-gray-400">
+        <p className="mt-3 text-[11px] text-gray-500">
           Nothing here yet. Shapes you draw will show up as layers.
         </p>
       ) : (
@@ -35,8 +35,8 @@ export default function LayersPanel({
                 aria-pressed={isSelected}
                 className={`flex cursor-pointer items-center gap-2 rounded-md px-2 py-1.5 text-xs ${
                   isSelected
-                    ? "bg-blue-50 text-blue-700"
-                    : "text-gray-600 hover:bg-gray-50"
+                    ? "bg-blue-500/20 text-blue-300"
+                    : "text-gray-200 hover:bg-gray-800"
                 }`}
                 onClick={(event) => onSelectShape(shape.id, isAdditive(event))}
                 onKeyDown={(event) => {
