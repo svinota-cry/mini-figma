@@ -71,6 +71,11 @@ export default function App() {
         />
       </main>
       <aside className="flex w-60 shrink-0 flex-col border-l border-gray-800 bg-gray-900">
+        <header className="border-b border-gray-800 p-4">
+          <h1 className="text-sm font-bold tracking-widest text-white uppercase">
+            Mini Figma
+          </h1>
+        </header>
         <PropertiesPanel
           selectedShape={selectedShape}
           onChangeFill={(fill) => {
